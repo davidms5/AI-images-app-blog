@@ -143,7 +143,7 @@ const CrearPost = () =>{
     <button type="button" onClick={generateImage}
     className='text-white bg-green-700 font-medium rounded-md
     text-sm w-full sm:w-auto px-5 py-2.5 text-center'>
-    {generatingImg ? 'generando...' : "generado"}
+    {generatingImg ? 'generating...' : "generated"}
     </button>
 
     </div>
@@ -156,7 +156,7 @@ const CrearPost = () =>{
       type='submit'
       className='mt-3 text-white bg-[#6469ff] 
       font-medium rounded-md text-sm w-full sm:auto
-      px-5 py-2.5 text-center'>shafre with the community
+      px-5 py-2.5 text-center'>share with the community
 
       </button>
 
