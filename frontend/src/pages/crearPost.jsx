@@ -24,7 +24,7 @@ const CrearPost = () =>{
       setLoading(true);
 
       try {
-        const response = await fetch('http://localhost:8000/api/v1/post', {
+        const response = await fetch('https://ai-images-app-blog.onrender.com/api/v1/post', {
           method:'POST',
           headers: {
             'Content-type': 'application/json',
@@ -60,7 +60,7 @@ const CrearPost = () =>{
 
       try{
         setGeneratingImg(true);
-        const response = await fetch('http://localhost:8000/api/v1/dalle', {
+        const response = await fetch('https://ai-images-app-blog.onrender.com/api/v1/dalle', {
           method: 'POST',
           headers:{
             'Content-type':'application/json',
@@ -85,8 +85,8 @@ const CrearPost = () =>{
   return (
     <section className='max-w-7xl mx-auto'>
       <div>
-       <h1 className='font-extrabold text-[#222328] text-[16px]'>Crear</h1> 
-        <p className='mt-2 text-[#666e75] text-[16px] max-w[500px]'> crea imaginativas y visualmente impresionantes imagenes generadas con DALL-E AI y compartelas con la comunidad!</p>
+       <h1 className='font-extrabold text-[#222328] text-[16px]'>Create</h1> 
+        <p className='mt-2 text-[#666e75] text-[16px] max-w[500px]'> create imaginative and amazing images generated with DALL-E AI and share them with the community!</p>
 
     </div>
 
@@ -149,14 +149,14 @@ const CrearPost = () =>{
     </div>
 
     <div className="mt-10">
-    <p className='mt-2 text-[#666e75] text-[14px]'> una vez que ya hayas creado la imagen que deseas, 
-      puedes compartirla con otros en la comunidad</p>
+    <p className='mt-2 text-[#666e75] text-[14px]'> once you have created the image that you wanted, 
+      you can share it with the others in the community</p>
 
       <button
       type='submit'
       className='mt-3 text-white bg-[#6469ff] 
       font-medium rounded-md text-sm w-full sm:auto
-      px-5 py-2.5 text-center'>comparte con la comunidad
+      px-5 py-2.5 text-center'>shafre with the community
 
       </button>
 
