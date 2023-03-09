@@ -16,6 +16,7 @@ const CrearPost = () =>{
 
   const [generatingImg, setGeneratingImg] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [loadButton, setLoadButton] = useState(false)
 
   const handleSubmit = async(e) => {
     e.preventDefault();
@@ -156,7 +157,7 @@ const CrearPost = () =>{
       type='submit'
       className='mt-3 text-white bg-[#6469ff] 
       font-medium rounded-md text-sm w-full sm:auto
-      px-5 py-2.5 text-center' onClick={<Loader/>}>share with the community
+      px-5 py-2.5 text-center' onClick={() => setLoadButton(true)}>{loadButton ? <Loader/> :"share with the community"}
 
       </button>
 
