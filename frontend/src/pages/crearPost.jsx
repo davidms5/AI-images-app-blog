@@ -156,7 +156,7 @@ const CrearPost = () =>{
       type='submit'
       className='mt-3 text-white bg-[#6469ff] 
       font-medium rounded-md text-sm w-full sm:auto
-      px-5 py-2.5 text-center'>share with the community
+      px-5 py-2.5 text-center' onClick={<Loader/>}>share with the community
 
       </button>
 
